@@ -43,14 +43,14 @@ class euro:
             # ignore loops
             return True
         else:
-            print u"\n-----\nError: instruction “%s” is not defined" % s[0]
+            print (u"\n-----\nError: instruction “%s” is not defined" % s[0])
 
     def executeBlock(self, lines, statement):
         i = 0
         limit = 100
         while (self.getStatement(statement)):
             if i > limit:
-                print u"\n-----\nError: block executed more than 100 times, lines:\n\n%s\n\nstatement:\n\n%s\n\n-----\n" % (lines, statement)
+                print (u"\n-----\nError: block executed more than 100 times, lines:\n\n%s\n\nstatement:\n\n%s\n\n-----\n" % (lines, statement))
                 sys.exit(1)
 
             for line in lines:
@@ -60,7 +60,7 @@ class euro:
 
     def getStatement(self, statement):
         if (statement[1] == 'topogleich'):
-            return self.getSymbol(statement[0]) >= int(statement[2])
+            return int(self.getSymbol(statement[0])) >= int(statement[2])
 
     def setSymbol(self, name, value):
         name = self.withoutEuro(name)
@@ -73,7 +73,7 @@ class euro:
 
             return value
         else :
-            print "\n-----\n",'Error: "', name, '"is not in', self.symbols, '-----'
+            print ("\n-----\n",'Error: "', name, '"is not in', self.symbols, '-----')
 
     def withoutEuro(self, string):
         return(string.replace(self.sign, ''))
