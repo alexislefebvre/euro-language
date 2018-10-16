@@ -1,0 +1,14 @@
+dist: trusty
+sudo: false
+
+language: python
+
+git:
+  depth: 5
+
+python:
+  - "2.7"
+  - "3.6"
+
+script:
+  - ./test/test.sh
