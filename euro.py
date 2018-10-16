@@ -3,7 +3,7 @@
 
 # =             gleich (german)
 # while         mientras (spanish)
-# >             topo (portuguese)
+# >             topo (portuguese) (it should be "maior" instead)
 # subtract      odejmowanie (polish)
 # print         afficher (french)
 # newline       NETHERLANDS
@@ -32,8 +32,6 @@ class euro:
 
             sys.stdout.write(' '.join(buffer))
             # @see http://stackoverflow.com/questions/4499073/printing-without-newline-print-a-prints-a-space-how-to-remove/4499172#4499172
-        elif s[0] == 'afficherNouvelleLigne':
-            print ''
         elif s[0] == 'odejmowanie':
             self.setSymbol(s[1], (int(self.getSymbol(s[1])) - 1))
         elif (len(s) >= 3) and (s[1] == 'gleich'):
