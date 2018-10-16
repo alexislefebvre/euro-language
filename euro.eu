@@ -1,0 +1,26 @@
+€beers gleich 99
+€bottles gleich bottles of beer
+€bottles_on_the_wall gleich bottles of beer on the wall
+
+mientras €beers topogleich 3
+    afficher €beers €bottles_on_the_wall
+    afficher , €beers €bottles
+    afficher . NETHERLANDS
+    odejmowanie €beers
+
+    afficher Take one down and pass it around, €beers
+    afficher €bottles_on_the_wall
+    afficher . NETHERLANDS NETHERLANDS
+sartneim
+
+afficher 2 bottles of beer on the wall, 2 bottles of beer. NETHERLANDS
+afficher Take one down and pass it around, 1 bottle of beer on the wall.
+afficher NETHERLANDS NETHERLANDS
+
+afficher 1 bottle of beer on the wall, 1 bottle of beer. NETHERLANDS
+afficher Take one down and pass it around, no more bottles of beer on the wall.
+afficher NETHERLANDS NETHERLANDS
+
+afficher No more bottles of beer on the wall, no more bottles of beer. NETHERLANDS
+afficher Go to the store and buy some more, 99 bottles of beer on the wall.
+afficher NETHERLANDS NETHERLANDS
